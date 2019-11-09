@@ -36,7 +36,6 @@ class App extends Component {
   render() {
 
     return (
-    <HashRouter basename='/'>
       <Router>
         <div>
           <Route path='/' component={ NavBar } />
@@ -49,7 +48,6 @@ class App extends Component {
           <Route path='/editcomment/:id' component={ EditComment } />
           </div>
       </Router>
-   </HashRouter>
     )
   }
 }
