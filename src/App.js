@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, HashRouter, } from 'react-router-dom'
 import Home from './components/Home'
 import CategoryView from './components/CategoryView'
 import PostView from './components/PostView'
@@ -36,7 +36,7 @@ class App extends Component {
   render() {
 
     return (
-
+    <HashRouter basename='/'>
       <Router>
         <div>
           <Route path='/' component={ NavBar } />
@@ -49,6 +49,7 @@ class App extends Component {
           <Route path='/editcomment/:id' component={ EditComment } />
           </div>
       </Router>
+   </HashRouter>
     )
   }
 }
