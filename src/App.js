@@ -36,7 +36,7 @@ class App extends Component {
   render() {
 
     return (
-      <Router>
+      <Router basename="/seo-the-platinum.github.io/react-forum/">
         <div>
           <Route path='/' component={ NavBar } />
           <Route exact path='/' component={ Home } />
